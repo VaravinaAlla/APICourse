@@ -1,25 +1,6 @@
-var arr = [
-  {
-    userName: 'Test',
-    lastName: 'Test',
-    email: 'test.test@gmail.com',
-  },
-  {
-    userName: 'Dmitro',
-    lastName: 'Porohov',
-    email: 'dmitro.porohov@yahoo.com',
-  },
-  {
-    userName: 'Andrii',
-    lastName: '',
-    email: 'andrii@mail.ru', 
-  },
-];
+const jsonString = JSON.stringify(arr);
 
 const trustedEmailRegex = /^[\w.-]+@(gmail\.com|yahoo\.com)$/;
 
-const trustedEmails = arr
-  .map((obj) => obj.email) 
-  .filter((email) => trustedEmailRegex.test(email)); 
-
+const trustedEmails = jsonString.match(trustedEmailRegex);
 console.log(trustedEmails);
