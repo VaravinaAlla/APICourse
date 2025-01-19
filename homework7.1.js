@@ -8,6 +8,7 @@ var arr = [
     userName: 'Dmitro',
     lastName: 'Porohov',
     email: 'dmitro.porohov@yahoo.com',
+  },
   {
     userName: 'Andrii',
     lastName: '',
