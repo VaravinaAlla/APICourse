@@ -7,8 +7,7 @@ var arr = [
   {
     userName: 'Dmitro',
     lastName: 'Porohov',
-    email: 'dmitro.porohov@yahoo.com', // Синтаксична помилка, але email правильний
-  },
+    email: 'dmitro.porohov@yahoo.com',
   {
     userName: 'Andrii',
     lastName: '',
